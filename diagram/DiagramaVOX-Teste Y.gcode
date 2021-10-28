@@ -1,0 +1,16 @@
+G90
+G92 X0 Y0 Z0
+M106 S255
+
+;Corta os cantos da placa
+G1 F100 Z-1.0
+G1 F100 Z2.0
+G1 F100 X0.0 Y100.0
+G1 F100 Z-1.0
+G1 F100 Z2.0
+G1 F100 X2.0 Y0.0
+
+;Finaliza o trabalho
+G1 F100 Z2.0
+M106 S0
+M1
